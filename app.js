@@ -55,7 +55,7 @@ function calculator(num1, num2, callbackOne, callbackTwo) {
 function addNumbers(num1, num2){
     sum = num1 + num2 // should have been let result = num1 + num2;
 
-    (sum); //should have been return result(sum);
+    console.log(sum); //should have been return result(sum);
 }
 
 
@@ -67,3 +67,48 @@ function subtractNumbers(num1, num2) {
 }
 
 console.log(calculator(5, 77, addNumbers, subtractNumbers));
+
+//exercise numero tres
+//make a superHero function
+//take in two callbacks
+// return a string in each callback describing the superhero 
+
+function superHero (name, callbackTwo){
+    let hero = "I am " +  name + " and one of my powers is I can shoot lasers." + " ";
+    let otherSuperhero = callbackTwo();
+
+    return hero + otherSuperhero;
+}
+
+function superHeroTwo (){ 
+    let hero = "I also can fly." + " ";
+
+    return hero;
+}
+
+
+let name = "Superman";
+console.log(superHero(name, superHeroTwo));
+
+//rome's example
+
+function sonic(superPowerOne, superPowerTwo) {
+    let allSuperPowers = superPowerOne() + ' and ' + superPowerTwo();
+
+    return allSuperPowers;
+}
+
+function superSpeed() {
+    let power = 'I can run 1000 mph';
+
+    return power;
+}
+
+function superSpin(){
+    let spin = "I can spin 1000 mph";
+
+    return spin;
+}
+
+console.log(sonic(superSpeed, superSpin));
+
