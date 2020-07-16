@@ -153,3 +153,40 @@ setTimeout(function() {
 }, 5000); 
 
 
+
+//forEach
+
+const collectables = ['Bomag', 'CMI Corp', 'Wirtgen', 'Catepillar'];
+
+// collectables.forEach (function(element){
+//     console.log(element);
+// })
+
+
+collectables.forEach(element => {
+    if (element.length > 6) {
+        console.log(element);
+    }    
+});
+
+
+//map returns an array of changes made in each element
+
+const someNumbers = [90, 20, 39, 20];
+
+const addFive = someNumbers.map(element => {
+    return element + 5; //must return something 
+});
+
+console.log(addFive);
+
+
+//filter you can return something based off a condition
+
+const newNumbers = someNumbers.filter(element => {
+    if (element > 50) {
+        return element;
+    }
+});
+
+console.log(newNumbers);
