@@ -53,16 +53,16 @@ function calculator(num1, num2, callbackOne, callbackTwo) {
 }
 
 function addNumbers(num1, num2){
-    sum = num1 + num2
+    sum = num1 + num2 // should have been let result = num1 + num2;
 
-    console.log(sum);
+    (sum); //should have been return result(sum);
 }
 
 
 function subtractNumbers(num1, num2) {
-    sum = num1 - num2
+     sum = num1 - num2;  //should have been let result(sum) = num1 - num2;
 
-    console.log(sum);
+    console.log(sum); //should have been return result(sum in this case);
 
 }
 
