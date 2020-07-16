@@ -112,3 +112,33 @@ function superSpin(){
 
 console.log(sonic(superSpeed, superSpin));
 
+
+function blastOff(){
+    let num = 0;
+
+    for (let i = 10; i >= num; i--){
+        console.log(i);
+    }
+    console.log("blast Off");
+}
+
+setTimeout(blastOff, 5000);
+
+
+//make a function that prints your name
+//selfTimeout and pass in function and a time (5000)
+
+function jojo() {
+    let num = 0;
+
+    for (let i = 10; i >= num; i--){
+        console.log(i);
+    }
+
+    console.log("HEY! My name is Alpha!");
+
+}
+
+setTimeout(jojo, 5000);
+
+
