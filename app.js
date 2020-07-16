@@ -141,4 +141,15 @@ function jojo() {
 
 setTimeout(jojo, 5000);
 
+//how it should have been done
+
+function printName(name) {
+    console.log(name);
+}
+
+let myNameTwo = 'Rome';
+setTimeout(function() {
+    printName(myNameTwo);
+}, 5000); 
+
 
